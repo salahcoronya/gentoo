@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 34d85f23..da11bc17 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -168,7 +168,7 @@ if(UNIX AND NOT APPLE)
+    endif()
+ 
+    set(installSubDir_data         "share/${CMAKE_PROJECT_NAME}")
+-   set(installSubDir_doc          "share/doc/${CMAKE_PROJECT_NAME}")
++   set(installSubDir_doc          "share/doc/${CMAKE_PROJECT_NAME}-${CMAKE_PROJECT_VERSION}")
+    set(installSubDir_bin          "bin")
+    # According to https://specifications.freedesktop.org/menu-spec/menu-spec-1.0.html#paths, .desktop files need to live
+    # in one of the $XDG_DATA_DIRS/applications/.  (Note that $XDG_DATA_DIRS is a colon-separated list of directories, typically

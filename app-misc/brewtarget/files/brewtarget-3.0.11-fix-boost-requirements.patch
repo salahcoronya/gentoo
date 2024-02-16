@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 830b615c..4f3af58f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -665,7 +665,7 @@ elseif(APPLE)
+    find_package(Boost 1.79.0 REQUIRED)
+ else()
+    # Note that header-only libraries don't have a component
+-   find_package(Boost 1.79.0 REQUIRED COMPONENTS stacktrace_backtrace)
++   find_package(Boost REQUIRED)
+ endif()
+ include_directories(${Boost_INCLUDE_DIRS})
+ # Uncomment the next two lines if you want to find where Boost headers and DLLs are on your system
