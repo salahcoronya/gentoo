@@ -1,0 +1,27 @@
+https://github.com/eliben/pycparser/pull/565
+
+From 46ba031375437c893fc3b22c4467b865e90e8151 Mon Sep 17 00:00:00 2001
+From: Christopher Byrne <salah.coronya@gmail.com>
+Date: Tue, 4 Mar 2025 15:28:51 -0600
+Subject: [PATCH 2/2] tests/test_util.py: Respect CPP environmental variable
+
+---
+ tests/test_util.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tests/test_util.py b/tests/test_util.py
+index 56835a0..95d1bd5 100644
+--- a/tests/test_util.py
++++ b/tests/test_util.py
+@@ -22,7 +22,7 @@ def cpp_path():
+     """Path to cpp command."""
+     if platform.system() == 'Darwin':
+         return 'gcc'
+-    return 'cpp'
++    return ''
+ 
+ 
+ def cpp_args(args=[]):
+-- 
+2.45.3
+
